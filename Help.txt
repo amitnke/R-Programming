@@ -1,0 +1,17 @@
+To list all stuff,
+
+ls("package:ISLR", all = TRUE)
+
+all = TRUE shows hidden objects (i.e., variable name beginning with ".")
+
+To list all functions with formals,
+
+lsf.str("package:dplyr", all = TRUE)
+
+To list all datasets with brief description
+
+data(package = "RPostgreSQL")$results
+
+Just in case, to list all imports and exports of the namespace,
+
+getNamespaceInfo("ISLR", "imports")
